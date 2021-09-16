@@ -6,7 +6,7 @@ function Button(props) {
     return (
         <button
             type={props.type || "button"}
-            className={styles["button-form"]}
+            className={`${styles.btn} ${styles["button-form"]}`}
             onClick={props.onClick}
         >
             {props.children}

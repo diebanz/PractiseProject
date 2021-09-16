@@ -22,7 +22,17 @@ function AddUser(props) {
 
     const addUserHandler = (event) => {
         event.preventDefault();
-        console.log(enteredTask, enteredUsername, enteredDate);
+
+        if (
+            enteredUsername.trim().length === 0 ||
+            enteredTask.trim().length === 0
+        ) {
+            return;
+        }
+        props.onAddUser(enteredTask, enteredUsername, enteredDate);
+        setEnteredTask("");
+        setEnteredUsername("");
+        setEnteredDate("");
     };
 
     return (
@@ -33,18 +43,21 @@ function AddUser(props) {
                 <input
                     id="task"
                     type="text"
+                    value={enteredTask}
                     onChange={taskChangeHandler}
                 ></input>
                 <label htmlFor="username">Who should do it?</label>
                 <input
                     id="username"
                     type="text"
+                    value={enteredUsername}
                     onChange={usernameChangeHandler}
                 ></input>
                 <label htmlFor="date">Deadline</label>
                 <input
                     id="date"
                     type="date"
+                    value={enteredDate}
                     onChange={dateChangeHandler}
                 ></input>
                 <Button type="submit">ASSIGN THE TASK</Button>
