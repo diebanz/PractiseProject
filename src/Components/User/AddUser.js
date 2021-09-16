@@ -1,6 +1,7 @@
 import React from "react";
 
 import Card from "../UI/Card";
+import Button from "../UI/Button";
 import styles from "./AddUser.module.css";
 
 function AddUser(props) {
@@ -18,9 +19,7 @@ function AddUser(props) {
                 <input id="username" type="text"></input>
                 <label htmlFor="date">Deadline</label>
                 <input id="date" type="date"></input>
-                <button type="submit" className={styles["button-form"]}>
-                    Assign the Task
-                </button>
+                <Button />
             </form>
         </Card>
     );
