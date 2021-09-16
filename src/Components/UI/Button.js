@@ -5,11 +5,11 @@ import styles from "./Button.module.css";
 function Button(props) {
     return (
         <button
-            type="submit"
+            type={props.type || "button"}
             className={styles["button-form"]}
             onClick={props.onClick}
         >
-            ASSIGN THE TASK
+            {props.children}
         </button>
     );
 }
