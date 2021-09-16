@@ -1,0 +1,47 @@
+.form {
+    width: 40%;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #498cc0;
+    border-radius: 1rem;
+    color: #fff;
+    box-shadow: 0.5rem 0.5rem 1rem #8194a398;
+}
+
+input {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus {
+    outline-color: #132a76;
+}
+
+.invalid {
+    outline-color: red;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+.button-form {
+    color: #0f4076;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 5rem;
+    background-color: #eee;
+}
+
+h1 {
+    margin-bottom: 5rem;
+}
