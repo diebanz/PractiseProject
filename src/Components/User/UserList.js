@@ -1,16 +1,18 @@
 import React from "react";
 
 import Card from "../UI/Card";
-import TaskButtons from "../UI/TaskButtons";
-import styles from "./UserList.module.css";
+import Button from "../UI/Button";
+
+import classes from "./UserList.module.css";
+import styles from "../UI/Button.module.css";
 
 function UserList(props) {
     return (
-        <Card className={styles.users}>
-            <ul className={styles.list}>
+        <Card className={classes.users}>
+            <ul className={classes.list}>
                 {props.users.map((user) => (
-                    <li className={styles["list__item"]} key={user.id}>
-                        <div className={styles.container}>
+                    <li className={classes["list__item"]} key={user.id}>
+                        <div className={classes.container}>
                             <p>
                                 <span>task:</span> {user.task}
                             </p>
@@ -18,10 +20,13 @@ function UserList(props) {
                                 <span>assigned to:</span> {user.name}
                             </p>
                             <p>
-                                <span>deadline:</span> {user.date}{" "}
+                                <span>deadline:</span> {user.date}
                             </p>
                         </div>
-                        <TaskButtons />
+                        <div className={styles.buttonbox}>
+                            <Button className={styles.accept}>Accept </Button>
+                            <Button className={styles.decline}>Decline</Button>
+                        </div>
                     </li>
                 ))}
             </ul>

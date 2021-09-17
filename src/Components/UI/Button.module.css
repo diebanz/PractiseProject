@@ -1,5 +1,4 @@
 .btn {
-    margin: 0.5rem;
     display: block;
     width: 20rem;
     color: #fff;
@@ -35,8 +34,10 @@
 
 .accept {
     background-color: #3d6f0c;
+    margin: 1rem;
 }
 
 .decline {
     background-color: #641414;
+    margin: 1rem;
 }

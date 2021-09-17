@@ -6,8 +6,8 @@ function Button(props) {
     return (
         <button
             type={props.type || "button"}
-            className={`${styles.btn} ${styles["button-form"]}`}
             onClick={props.onClick}
+            className={`${styles.btn} ${props.className}`}
         >
             {props.children}
         </button>

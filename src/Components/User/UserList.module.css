@@ -9,7 +9,9 @@
 }
 
 .list__item {
-    border: 1px solid #ccc;
+    background-color: #b5cada;
+    border: 1px solid #011e5c;
+    border-radius: 1rem;
     margin: 1rem 0;
     padding: 3rem;
     display: flex;
@@ -21,11 +23,21 @@
     justify-content: space-between;
     margin: 2rem 0;
     padding: 2rem;
-    background-color: #0e7cd0;
+    background-color: #2f80bf;
     border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem #fff;
 }
 
 span {
+    font-weight: 600;
     color: #011e5c;
     text-transform: uppercase;
+}
+
+span.cancel {
+    color: red;
+}
+
+span.accept {
+    color: green;
 }
