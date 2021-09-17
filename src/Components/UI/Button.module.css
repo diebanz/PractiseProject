@@ -41,3 +41,7 @@
     background-color: #641414;
     margin: 1rem;
 }
+
+.hidden {
+    display: none;
+}

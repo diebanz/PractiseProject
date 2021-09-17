@@ -28,16 +28,16 @@
     box-shadow: 0.2rem 0.2rem 0.2rem #fff;
 }
 
+.container.accepted {
+    background-color: #447444;
+}
+
+.container.declined {
+    background-color: #744646;
+}
+
 span {
     font-weight: 600;
     color: #011e5c;
     text-transform: uppercase;
-}
-
-span.cancel {
-    color: red;
-}
-
-span.accept {
-    color: green;
 }
